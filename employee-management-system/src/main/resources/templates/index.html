@@ -29,7 +29,9 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Salary</th>
             <th>Actions</th>
+
         </tr>
         </thead>
 
@@ -42,6 +44,7 @@
             <td th:text="${employee.firstName}"></td>
             <td th:text="${employee.lastName}"></td>
             <td th:text="${employee.email}"></td>
+            <td th:text="${employee.salary}"></td>
             <td>
                 <!-- The link which sends GET request to "/showFormForUpdate/{id}" (id is employee.id) -->
                 <a th:href="@{/showFormForUpdate/{id}(id=${employee.id})}"
@@ -50,7 +53,7 @@
             <td>
                 <!-- The link which sends GET request to "/delete/{id}" (id is employee.id)  -->
                 <a th:href="@{/delete/{id}(id=${employee.id})}"
-                   class="waves-effect waves-light btn red litghten-2">Delete</a>
+                   class="waves-effect waves-light btn red lighten-2">Delete</a>
             </td>
         </tr>
         </tbody>

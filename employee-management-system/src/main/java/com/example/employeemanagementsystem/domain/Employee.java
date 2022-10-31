@@ -19,6 +19,8 @@ public class Employee {
     private String lastName;
     private String email;
 
+    private double Salary;
+
     public long getId() {
         return id;
     }
@@ -49,5 +51,13 @@ public class Employee {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public double getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(double salary) {
+        Salary = salary;
     }
 }
