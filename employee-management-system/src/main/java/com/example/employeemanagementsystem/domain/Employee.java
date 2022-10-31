@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Objects;
 
 /* This is the model */
 
@@ -19,7 +20,7 @@ public class Employee {
     private String lastName;
     private String email;
 
-    private double Salary;
+    private String salary;
 
     public long getId() {
         return id;
@@ -53,11 +54,12 @@ public class Employee {
         this.email = email;
     }
 
-    public double getSalary() {
-        return Salary;
+    public String getSalary() {
+
+        return  salary;
     }
 
-    public void setSalary(double salary) {
-        Salary = salary;
+    public void setSalary(String salary) {
+        this.salary = salary;
     }
 }
